@@ -1,4 +1,4 @@
-This R package is designed as an educational resource for Master's students at the **Central University of Haryana (CUH)** and beyond. Its goal is to **assist instructors and learners** in understanding the fundamental concepts of **Geography and GIS** through practical examples and datasets.
+This R package is designed as an educational resource for Master's students at the **Central University of Haryana (CUH)** and beyond. Its goal is to **assist instructors and learners** in understanding the fundamental concepts of **Geography and GIS** through practical examples and datasets. This serves for both MSc Geography and MSc Geoinformatics.
 
 ### Key points:
 - Provides sample geospatial datasets and tools for teaching GIS workflows.
