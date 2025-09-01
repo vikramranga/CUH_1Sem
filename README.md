@@ -12,5 +12,5 @@ This R package is designed as an educational resource for Master's students at t
 You can install the development version of the package directly from GitHub using:
 
 ```r
-# install.packages("devtools")  # if not already installed
+# install.packages("devtools")  # if not already installed - You need to do it for the first time compulsorily.
 devtools::install_github("vikramranga/CUH_1Sem")
