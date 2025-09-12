@@ -1,0 +1,84 @@
+---
+title: "Exercise: Importing Earthquake Data into QGIS and Creating a Map"
+author: "Dr. Vikram Ranga"
+format: pdf
+fontsize: 12pt
+geometry: margin=1in
+---
+
+# Objective
+
+In this assignment, you will learn how to import a CSV file containing earthquake data into QGIS, use Latitude and Longitude columns to display the data as points, and visualize the spatial distribution of earthquakes.  
+
+---
+
+# Dataset  
+
+- File: **earthquake.csv**  
+- Contents: The dataset includes earthquake records with columns such as:  
+
+- `ID` – Unique identifier for each earthquake  
+- `Date` – Date of occurrence  
+- `Latitude` – Latitude coordinate of epicenter  
+- `Longitude` – Longitude coordinate of epicenter  
+- `Magnitude` – Earthquake magnitude (Richter scale)  
+- `Depth` – Depth of earthquake in kilometers  
+
+---
+
+# Instructions  
+
+## Step 1: Open QGIS  
+- Launch **QGIS Desktop** from your computer.  
+- Create a **new empty project** (*Project → New*).  
+
+## Step 2: Load the CSV file  
+- Go to **Layer → Add Layer → Add Delimited Text Layer**.  
+- Browse and select the file **earthquake.csv**.  
+- Ensure the **File format** is set to *CSV (comma separated values)*.  
+- Verify that QGIS correctly detects the delimiter (comma).  
+
+## Step 3: Set the Geometry  
+- In the dialog, look for the **Geometry Definition** section.  
+- Choose **Point coordinates**.  
+- Set:  
+  - **X field** = `Longitude`  
+  - **Y field** = `Latitude`  
+- Click **Add** → then **Close**.  
+- The earthquake points should now appear on the map canvas.  
+
+## Step 4: Check Coordinate Reference System (CRS)  
+- At the bottom-right corner of QGIS, click the CRS indicator.  
+- Set CRS to **EPSG:4326 – WGS 84** (standard for latitude/longitude).  
+- Confirm that the points are displayed properly.  
+
+## Step 5: Style the Map  
+- In the **Layers Panel**, right-click on the imported earthquake layer → **Properties**.  
+- Go to the **Symbology** tab.  
+- Change the symbol size based on **Magnitude** (use *Graduated* symbology).  
+- Choose a color ramp (e.g., Yellow → Red, where red shows higher magnitude).  
+- Apply and check your visualization.  
+
+## Step 6: Add a Base Map  
+- Go to **Plugins → Manage and Install Plugins**.  
+- Search for **QuickMapServices** and install it.  
+- Go to **Web → QuickMapServices → OSM → OSM Standard** to add a base map.  
+- Earthquake points should now overlay on a real-world basemap.  
+
+## Step 7: Save Your Project and Export Map  
+- Save your project as **earthquake_project.qgz**.  
+- To export a map:  
+  - Go to **Project → New Print Layout**.  
+  - Add the map to the layout.  
+  - Insert a **Title, Legend, Scale bar, and North arrow**.  
+  - Export your final map as **PDF or PNG**.  
+
+---
+
+# Deliverables  
+
+Submit the following:  
+
+1. Your **QGIS project file** (`earthquake_project.qgz`).  
+2. A **map output** (PDF/PNG) showing the spatial distribution of earthquakes 
+3. A short note (200–300 words) describing the pattern of earthquakes you observe.  
